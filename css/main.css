@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #096678;
+}
+
+img {
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.section-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px;
+  width: 700px;
+}
+
+.label-left {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 2px 2px 2px #fff;
+  font-weight: bold;
+}
+
+.label-left::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -50px;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  background-image: url("../images/name.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+
+.label-left:nth-child(2)::before {
+  background-image: url("../images/pass.png");
+}
+
+.label-right {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 2px 2px 2px #fff;
+  font-weight: bold;
+}
+
+.label-right::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -50px;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  background-image: url("../images/surname.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+
+.label-right:nth-child(2)::before {
+  background-image: url("../images/tel.png");
+}
+
+.input {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 22px;
+  border: none;
+}
+
+::placeholder {
+  color: blueviolet;
+  opacity: 0.6;
+}
+
+.input[value] {
+  color: red;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <main class="site-main">
+      <section class="form-section">
+        <div class="container">
+          <form
+            class="section-form"
+            action="https://echo.htmlacademy.ru"
+            method="post"
+            autocomplete="off"
+          >
+            <div class="form-content">
+              <label class="label-left">
+                What is your name?
+                <input
+                  class="input"
+                  type="text"
+                  name="user_name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </label>
+              <label class="label-left">
+                What is your password?
+                <input
+                  class="input"
+                  type="password"
+                  name="user_password"
+                  placeholder="Enter your password"
+                  required
+                />
+              </label>
+            </div>
+            <div class="form-content">
+              <label class="label-right">
+                What is your surname?
+                <input
+                  class="input"
+                  type="text"
+                  name="user_surname"
+                  placeholder="Enter your surname"
+                  required
+                />
+              </label>
+              <label class="label-right">
+                What is your number?
+                <input
+                  class="input"
+                  type="tel"
+                  name="user_phone_number"
+                  value="+9989"
+                  required
+                />
+              </label>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
